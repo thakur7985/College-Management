@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}E College{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/font/campton-cufonfonts/web-fonts/font-face.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/lity.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-free-6.4.2-web/css/all.css' %}">
+    <!-- favicon start -->
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'assets/img/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/img/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/img/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'assets/img/favicon/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'assets/img/favicon/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon end -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/background-animation.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+</head>
+
+<body>
+    <!-- header Section -->
+    <section class="headerSection wow animate__fadeIn" style="visibility: visible; animation-name: fadeIn;">
+        <div class="site-width-header">
+            <div class="headerWrapper">
+                <div class="logoSection">
+                    <a href="javascript:void(0)">
+                        <img src="{% static 'assets/img/logo.png' %}" alt="E College" title="E College" oncontextmenu="return false;">
+                    </a>
+                </div>
+                <div class="allHeaders">
+                    <div class="topHeaderSection">
+                        <div class="topHeadContact">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i> <a href="mailto:contact@ecollege.in">contact@ecollege.in</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone-volume"></i> <a href="tel:0000000000">+91 000-000-0000</a>
+                                </li>
+                            </ul>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mainHeaderSection">
+                        <div class="headerNav">
+                            <ul class="headerMenu">
+                                <li> <a href="index.html" class="active">Home</a></li>
+                                <li> <a href="javascript:void(0)">About Us</a></li>
+                                <li class="hasSub">
+                                    <a href="javascript:void(0)">Courses</a>
+                                    <div class="headerSubNav">
+                                        <ul class="headerSubMenu">
+                                            <li><a href="javascript:void(0)">Master of Technology | M.Tech</a></li>
+                                            <li><a href="javascript:void(0)">Bachelor of Technology | B.Tech</a></li>
+                                            <li><a href="javascript:void(0)">Bachelor of Architecture | B.Arch</a></li>
+                                            <li><a href="javascript:void(0)">Bachelor of Fashion Design | B.FAD</a></li>
+                                            <li><a href="javascript:void(0)">Bachelor of Fine Art | BFA</a></li>
+                                            <li><a href="javascript:void(0)">Bachelor of Pharmacy | B.Pharm</a></li>
+                                            <li><a href="javascript:void(0)">Master of Business Administration | MBA</a></li>
+                                            <li><a href="javascript:void(0)">Master of Computer Applications | MCA</a></li>
+                                            <li><a href="javascript:void(0)">Bachelor of Business Administration | BBA</a></li>
+                                            <li><a href="javascript:void(0)">Bachelor in Computer Application | BCA</a></li>
+                                            <li><a href="javascript:void(0)">B.Sc</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li> <a href="javascript:void(0)">Admission</a></li>
+                                <li> <a href="javascript:void(0)">Placement</a></li>
+                                <li> <a href="javascript:void(0)">Events</a></li>
+                                <li> <a href="javascript:void(0)">Gallery</a></li>
+                            </ul>
+                        </div>
+                        <div class="headerRightMenuWrap">
+                            <ul class="headerRightMenu">
+                                <li>
+                                    <div class="defaultBtn ">
+                                        <a href="javascript:void(0)" class="">
+                                            <span class="headerCareer"><i class="fa-solid fa-paper-plane"></i> Contact Us</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hamburger" id="hamburger-11">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% block content %}
+    <!-- Content will be injected here -->
+    {% endblock %}
+
+    <!-- footer -->
+    <footer class="footer-wrp-main position-relative wow animate__fadeIn">
+        <div class="footerTexture">
+            <img src="{% static 'assets/img/bgs/home2bg.webp' %}" alt="img">
+        </div>
+        <div class="footerMain">
+            <div class="site-width">
+                <div class="footer-links-wrp">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footer-logo-wrp position-relative">
+                                <a href="index.html"><img src="{% static 'assets/img/logo-light.png' %}" class="img-fluid" alt="E College"></a>
+                            </div>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, commodi! Cupiditate nulla consequatur quas tempora vitae, odit et provident ex est illo temporibus? Possimus eum perferendis rerum nam aspernatur veritatis.
+                            </p>
+                            <div class="footerContents">
+                                <ul class="footerSocial">
+                                    <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="ftr-link-bx">
+                                <p class="ttle mb-2"><a href="javascript:void(0)" class="title-16">Quick Links</a></p>
+                                <a href="javascript:void(0)">Home</a>
+                                <a href="javascript:void(0)">About Us</a>
+                                <a href="javascript:void(0)">Admission</a>
+                                <a href="javascript:void(0)">Placement</a>
+                                <a href="javascript:void(0)">Event</a>
+                                <a href="javascript:void(0)">Gallery</a>
+                                <a href="javascript:void(0)">Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="ftr-link-bx">
+                                <p class="ttle mb-2"><a href="javascript:void(0)" class="title-16">Our Courses</a></p>
+                                <a href="javascript:void(0)">B-Tech</a>
+                                <a href="javascript:void(0)">M-Tech</a>
+                                <a href="javascript:void(0)">B-Pharma</a>
+                                <a href="javascript:void(0)">MCA</a>
+                                <a href="javascript:void(0)">B.Sc</a>
+                                <a href="javascript:void(0)">BCA</a>
+                                <a href="javascript:void(0)">View All Courses</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+
+                            
+                            <div class="ftr-link-bx">
+                                <p class="ttle mb-2"><a href="javascript:void(0)" class="title-16">Our Address</a></p>
+                                <ul class="address-sec">
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                            <span>Kanpur <br> Uttar Pradesh - 208001</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer-address-link">
+                                        <a href="tel:+91-9871-92-3444">
+                                            <i class="fas fa-phone-volume" aria-hidden="true"></i>
+                                            <span>+91 - 000-000-0000</span>
+                                        </a>
+                                        <a href="tel:+91-9871-74-3444">
+                                            <i class="fas fa-phone-volume" aria-hidden="true"></i>
+                                            <span>+91 - 000-000-0000</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer-address-link">
+                                        <a href="mailto:contact@ecollege.in">
+                                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                                            <span> contact@ecollege.in</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="tsparticles"></div>
+        </div>
+
+        <div class="footer-btm-wrp">
+            <div class="site-width">
+                <div class="footer-btm-bx">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 ">
+                            <p class="copy-txt text-center text-md-start">Copyright © <script>document.write(new Date().getFullYear())</script> <span style="color: #00ebfc;">E College</span> | All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{% static 'assets/js/jquery-3.6.3.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/lity.min.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="{% static 'assets/js/TweenMax.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/inview.min.js' %}"></script>
+    <script type="text/javascript">
+       function inviewExample() {
+            var $example = $("#inview-example");
+            var inview;
+
+            if ($example.length) {
+                inview = new Waypoint.Inview({
+                    element: $example[0],
+                    entered: function (direction) {
+                        $(".timer").each(function () {
+                            var $this = $(this);
+                            var val = $(this).data("count");
+                            $({ Counter: 0 }).animate({
+                                Counter: val
+                            }, {
+                                duration: 3000,
+                                easing: "swing",
+                                step: function () {
+                                    $this.text(Math.ceil(this.Counter));
+                                },
+                                complete: function() {
+                                    $this.text(val);
+                                }
+                            });
+                        });
+                    }
+                });
+            }
+        }
+
+        $(window).on("load", function () {
+            inviewExample();
+        });
+    </script>
+</body>
+</html>
